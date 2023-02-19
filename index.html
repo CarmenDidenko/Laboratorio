@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css">
+  <title>Laboratorio Final</title>
+</head>
+<body>
+  <script src="js"></script>
+  <div class="Form">
+    <form name="CreateAccount" id="CreateAccount">
+      <h1>Create Account</h1>
+      <div class="Account">
+        <p id="pName">Nombre</p><input type="text" name="name" id="name" class="formElement" value=""> <span id="nameError"></span>
+      </div>
+      <div class="Account">
+        <p id="pEmail">Email</p><input type="email" name="email" value="" id="email" class="formElement"> <span id="emailError"></span>
+      </div>
+      <div class="Account">
+        <p id="ppassword">Clave</p><input type="password" name="password" id="password" class="formElement" value=""> <span id="passError"></span>
+      </div>
+      <div class="Account">
+        <p id="pConfirmar">Confirme su clave</p><input type="password" name="confirm" id="confirm" class="formElement" value=""> <span id="confirmError"></span>
+      </div><input type="submit" value="ENVIAR" id="button" onclick="return validateName (), validateEmail (), validatePassword (), validateConfirm (), validateForm ()">
+    </form>
+  </div>
+</body>
+</html>
